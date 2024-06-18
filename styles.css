@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playwrite PL';
+    font-family: 'Tilt Neon';
 }
 
 body{
@@ -82,4 +82,38 @@ header{
 .navigation .Login-popup:hover{
     background:orchid;
     color: black;
+}
+
+.wrapper{
+    font-family: 'Raleway';
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid blue;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box-login{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box-login h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid blue;
+    margin: 30px 0;
 }
