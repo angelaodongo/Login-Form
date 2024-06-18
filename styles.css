@@ -5,13 +5,22 @@
     font-family: 'Playwrite PL';
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://a-static.besthdwallpaper.com/anime-city-night-wallpaper-2160x1440-87369_40.jpg) no-repeat;
+    background-size: cover;
+}
+
 header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-color:midnightblue;
+    background-color:plum;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,17 +37,36 @@ header{
 .navigation a{
     position: relative;
     font-size: 1.1em;
-    color: aquamarine;
+    color:antiquewhite;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:antiquewhite;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .navigation .Login-popup{
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid aquamarine;
+    border: 2px solid antiquewhite;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -50,6 +78,6 @@ header{
 }
 
 .navigation .Login-popup:hover{
-    background:cornflowerblue;
+    background:orchid;
     color: black;
 }
